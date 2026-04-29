@@ -15,7 +15,7 @@ jobs:
         run: echo "${{ secrets.DOCKER_PASS }}" | docker login -u "${{ secrets.DOCKER_USER }}" --password-stdin
 
       - name: Build image
-        run: docker build -t yourdockerhub/todo-app .
+        run: docker build -t neeraj2211/todo-app .
 
       - name: Push image
-        run: docker push yourdockerhub/todo-app
+        run: docker push neeraj2211/todo-app
